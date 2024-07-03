@@ -7,7 +7,7 @@ import Eventes from './components/Eventes/Events';
 import Videoss from './components/Videoss/Videoss';
 import Organizations from './components/Organizations/Organizations';
 import Community from './components/Community/Community';
-import Footer from './Footer/Footer';
+import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
 
 function App() {
