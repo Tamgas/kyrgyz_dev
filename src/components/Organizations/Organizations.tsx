@@ -8,4 +8,4 @@ const Organizations = () => {
     );
 };
 
-export default Organizations;
+export default Organizations; 

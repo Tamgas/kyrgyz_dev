@@ -15,8 +15,7 @@ const Eventes = () => {
                     <h3>Организатор <span>InkubasiaLAB</span></h3>
                     <h4>Локация <span>Коворкинг-резорт ololoAkJol</span></h4>
                     </div>
-                  <img src="https://devkg.com/images/events/e975ab09a375897590241aaec11d51fa.png" data-v-17b3db24=""/>
-                
+                    <img src="https://devkg.com/images/events/e975ab09a375897590241aaec11d51fa.png" data-v-17b3db24=""/>                
                 </div>
             </div>
         </div>
