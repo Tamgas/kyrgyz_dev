@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { ReactComponent as Logo } from "../../assets/images/header-logo.svg";
 import { Link, NavLink } from "react-router-dom";
 import { AiOutlineLogin } from "react-icons/ai";
 import { TbMenu2 } from "react-icons/tb";
@@ -17,10 +16,10 @@ const Header: React.FC = () => {
             <TbMenu2 />
           </div>
           <nav className="header--nav">
-            <NavLink to={"/"}>Вакансии</NavLink>
-            <NavLink to={"/events"}>Мероприятия</NavLink>
+            <NavLink to={"/vacancy"}>Вакансии</NavLink>
+            <NavLink to={"/event"}>Мероприятия</NavLink>
             <NavLink to={"/video"}>Видео</NavLink>
-            <NavLink to={"/organization"}>Организации</NavLink>
+            <NavLink to={"/organizations"}>Организации</NavLink>
             <NavLink to={"/community"}>Сообщество</NavLink>
           </nav>
           <div className="header--btn">

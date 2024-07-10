@@ -7,7 +7,7 @@
 
          }   
          .text {
-            width: 1050px;
+            // width: 1050px;
          }
         }
     }
@@ -59,7 +59,7 @@
         .btn {
 
            button {
-            margin-right: 50px;
+            margin-left: -43px;
            }
         }
         .image {
@@ -94,6 +94,11 @@
 
 @media (max-width: 600px) {
     .events {
+        .btn {
+            button {
+                margin-left: -65px;
+            }
+        }
         .image {
          img {
 
@@ -111,6 +116,11 @@
 
 @media (min-width: 0) and ( max-width: 450px) {
     .events {
+        .btn {
+            button {
+                margin-left: -90px;
+            }
+        }
         .image {
          
          .text {

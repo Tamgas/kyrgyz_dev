@@ -1,23 +1,23 @@
 import React from 'react';
 import './App.scss';
-import Header from './components/Header/Header';
+import Header from './components/Header';
 import { Route, Routes } from 'react-router-dom';
-import Vacancies from './components/Vacancies/Vacancies';
-import Eventes from './components/Eventes/Events';
-import Videoss from './components/Videoss/Videoss';
-import Organizations from './components/Organizations/Organizations';
-import Community from './components/Community/Community';
-import Footer from './components/Footer/Footer';
+import Event from './pages/Event';
+import Video from './pages/Video';
+import Organizations from './pages/Organizations';
+import Community from './pages/Community';
+import Footer from './components/Footer';
 import Hero from './components/Hero/Hero';
+import Vacancy from './pages/Vacancy';
 
 function App() {
   return (
     <div className="App">
      <Header/>
      <Routes>
-      <Route path='vacancies' element={<Vacancies/>}/>
-      <Route path='eventes' element={<Eventes/>}/>
-      <Route path='videoss' element={<Videoss/>}/>
+      <Route path='vacancy' element={<Vacancy/>}/>
+      <Route path='event' element={<Event/>}/>
+      <Route path='video' element={<Video/>}/>
       <Route path='organizations' element={<Organizations/>}/>
       <Route path='community' element={<Community/>}/>
       <Route path='hero' element={<Hero />}/>
