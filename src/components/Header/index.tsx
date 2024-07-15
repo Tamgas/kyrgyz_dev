@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { ReactComponent as Logo } from "../../assets/images/header-logo.svg";
 import { Link, NavLink } from "react-router-dom";
 import { AiOutlineLogin } from "react-icons/ai";
 import { TbMenu2 } from "react-icons/tb";
@@ -7,6 +6,8 @@ import { IoCloseSharp } from "react-icons/io5";
 
 const Header: React.FC = () => {
   const [menu, setMenu] = useState<boolean>(false);
+  const [modal, setModal] = useState<boolean>(false)
+
 
   return (
     <div id="header">
