@@ -3,8 +3,7 @@ import React, { useEffect, useState } from 'react';
 const jobs_url = "http://3.38.98.134/jobs"
 
 const useFetch = ({
-    url 
-
+    url
 } = {
     url:  jobs_url
 }) => {

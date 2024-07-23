@@ -1,7 +1,12 @@
 import React from "react";
-import { FaTelegramPlane } from "react-icons/fa";
+import useFetch from "../../components/hooks/useFetch";
+import { CommunityList } from "./CommunityList";
 
 const Community = () => {
+  const community_url = "http://3.38.98.134/community"
+  const {data, loding} = useFetch({
+    url: community_url
+  })
   return (
     <div id="community">
       <div className="container">
@@ -9,32 +14,17 @@ const Community = () => {
           <div className="community--telegram">
             <h1>Наши ресурсы в Telegram</h1>
             <div className="community--telegram__blocks">
-              <div className="community--telegram__blocks--block">
-                <span>
-                  <FaTelegramPlane />
-                </span>
-                <p>Общий чат</p>
-              </div><div className="community--telegram__blocks--block">
-                <span>
-                  <FaTelegramPlane />
-                </span>
-                <p>Вакансии</p>
-              </div><div className="community--telegram__blocks--block">
-                <span>
-                  <FaTelegramPlane />
-                </span>
-                <p>Мероприятия</p>
-              </div><div className="community--telegram__blocks--block">
-                <span>
-                  <FaTelegramPlane />
-                </span>
-                <p>Видеоконференции</p>
-              </div><div className="community--telegram__blocks--block">
-                <span>
-                  <FaTelegramPlane />
-                </span>
-                <p>Relocate & Remote</p>
-              </div>
+              {
+                data && data.map((community: any) => {
+                return (
+                  <CommunityList
+                  key={community.id}
+                  label = {community.label}
+                  value = {community.value}
+                  />
+                )
+                })
+              }
             </div>
           </div>
         </div>
