@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { ReactComponent as Logo } from "../../assets/images/header-logo.svg";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AiOutlineLogin } from "react-icons/ai";
 import { TbMenu2 } from "react-icons/tb";
@@ -43,7 +42,7 @@ const Header: React.FC = () => {
             <span>
               <AiOutlineLogin />
             </span>
-            <button onClick={() => nav("/login")}>Войти</button>
+            <button onClick={() => nav("/auth")}>Войти</button>
           </div>
         </div>
       </div>
